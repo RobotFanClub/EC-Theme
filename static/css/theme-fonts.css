@@ -2,12 +2,12 @@
 
 /* Reglo Bold */
 
-@font-face{
+@font-face {
 	font-family: 'reglo';
-	src: url('/webfonts/Reglo/Reglo-Bold.otf') format('opentype');
+	src: url('/webfonts/Reglo/Reglo-Bold.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
-	}
+}
 
 /* Avara */
 
