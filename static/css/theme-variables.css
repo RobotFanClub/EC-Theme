@@ -1,0 +1,94 @@
+/* Light mode */
+:root {
+
+    /* Brand Colours */
+
+    --ec-black: #000000;
+    --ec-white: #ffffff;
+    --ec-red: #c91212;
+    --ec-yellow: #fcaf16;
+    --ec-blue: #0082c7;
+    --ec-green: #32922f;
+
+	--text: var(--ec-black);
+	--link: var(--ec-blue);
+	--link_visited: #3c00c7;
+	--accent1: var(--ec-red);
+	--accent2: var(--ec-yellow);
+	--background: var(--ec-white);
+	--code: var(--ec-yellow);
+	--button-text: var(--ec-white);
+	--blockquote: var(--ec-blue);
+	--blockquote-border: var(--ec-black);
+	--aside: #e0f7fa;
+	--aside-border: #0097a7;
+	--note: #e8f5e9;
+	--note-border: #d5e1d6;
+	--alert: #ffebee;
+	--alert-border: #d32f2f;
+	--field: #fffee0;
+	--mark: #FFFF99;
+	--post_preview_BG: #ffffff;
+	--rev-bg: #238fce;
+	--rev-link: #8acef6;
+
+	/* other global styling variables */
+
+    --site-title-size: 1.5em;
+
+    /* Page Width Control */
+    --width-content: 40rem;
+    --width-content-medium: 60rem;
+    --width-content-large: 90rem;
+
+
+	/* Global Responsive Styling */
+	--mobile-width: 650px;
+
+    /* Copying Gutter Setup from a Tutorial */
+
+    --space-m: clamp(1.5rem, 1.4348rem + 0.3261vw, 1.6875rem);
+    --width-site-gutter: var(--space-m);
+
+    /* Standardizing Heading Styling for All Sub-Classes */
+    --h1-size: 64px;
+    --h2-size: 54px;
+    --h3-size: 42px;
+    --h4-size: 38px;
+    --h5-size: 30px;
+    --h6-size: 26px;
+
+    --heading-line-height: 100%;
+    --heading-padding: 0.5em 0em 0.25em 0em;
+    --heading-margin-bottom: 0%;
+
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: var(--ec-white);
+		--link: var(--ec-blue);
+		--link_visited: #6439c9;
+		--accent1: var(--ec-red);
+		--accent2: var(--ec-yellow);
+		--background: var(--ec-black);
+		--code: var(--ec-yellow);	
+		--button-text: var(--ec-black);
+		--blockquote: #44475a;
+		--blockquote-border: #6272a4;
+		--aside: #6272a4;
+		--aside-border: #7797b7	;
+		--note: #3f444a;
+		--note-border: #4f545a;
+		--alert: #ff5555;
+		--alert-border: #f6c010;
+		--field: #44475a;
+		--mark: #FFFF99;
+		--post_preview_BG: #362a3b;
+		--rev-bg: var(--ec-blue);
+		--rev-link: var(--ec-white);
+
+
+	}
+}

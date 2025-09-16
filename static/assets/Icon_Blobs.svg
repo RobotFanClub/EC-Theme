@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-4800,0)">
+        <g id="Icon_Blobs" transform="matrix(0.166465,0,0,1.00503,1968.38,0)">
+            <rect x="17010.3" y="0" width="2162.62" height="358.2" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="17010.3" y="0" width="2162.62" height="358.2"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(9.18552,-5.99429e-32,2.71427e-31,1.52142,-116934,-1760.71)">
+                    <g transform="matrix(0.844239,-6.13687e-33,-5.24717e-33,0.844239,8083.49,-7326.11)">
+                        <circle cx="7837" cy="10188" r="119" style="fill:white;"/>
+                        <clipPath id="_clip2">
+                            <circle cx="7837" cy="10188" r="119"/>
+                        </clipPath>
+                        <g clip-path="url(#_clip2)">
+                            <g transform="matrix(0.526459,0,0,0.526459,-1491.51,4920.58)">
+                                <g transform="matrix(1,0,0,1,1981.21,112.948)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:rgb(255,196,6);"/>
+                                </g>
+                                <g transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,33051,19911.8)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:rgb(190,33,33);"/>
+                                </g>
+                                <g transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,33459.4,20224.6)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:rgb(190,33,33);"/>
+                                </g>
+                                <g transform="matrix(0.59354,0,0,0.59354,8592.33,4088.33)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:rgb(50,146,47);"/>
+                                </g>
+                                <g transform="matrix(0.713987,0,0,0.713987,6676.44,2698.82)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:rgb(0,130,199);"/>
+                                </g>
+                                <g transform="matrix(0.713987,0,0,0.713987,6292.63,3094.62)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:rgb(0,130,199);"/>
+                                </g>
+                                <g transform="matrix(-0.713987,8.74383e-17,-8.74383e-17,-0.713987,28739.6,16930.1)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:white;"/>
+                                </g>
+                                <g transform="matrix(-0.713987,8.74383e-17,-8.74383e-17,-0.713987,29148,17242.9)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:white;"/>
+                                </g>
+                                <g transform="matrix(0.322007,0,0,0.322007,12664.2,6631.19)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:white;"/>
+                                </g>
+                                <g transform="matrix(-0.322007,3.94344e-17,-3.94344e-17,-0.322007,22751.8,12997.8)">
+                                    <circle cx="15702.2" cy="9915.2" r="204.202" style="fill:rgb(255,196,6);"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="matrix(2.98375,0,0,2.98375,-9083.29,-28619.5)">
+                        <path d="M8010.77,9979.23L8010.77,10059L7931,10059L7931,9979.23L8010.77,9979.23ZM7970.88,9985.88C7952.54,9985.88 7937.65,10000.8 7937.65,10019.1C7937.65,10037.5 7952.54,10052.4 7970.88,10052.4C7989.23,10052.4 8004.12,10037.5 8004.12,10019.1C8004.12,10000.8 7989.23,9985.88 7970.88,9985.88Z"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

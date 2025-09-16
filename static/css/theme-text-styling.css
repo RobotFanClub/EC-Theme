@@ -1,0 +1,158 @@
+/* Since I'm pretty particular about typography, it's useful to have a dedicated space for type styling */
+@import url(./theme-fonts.css);
+@import url(./theme-variables.css);
+
+/* Main global text styling from original theme */
+
+body { 
+    font-family: 'baskervville', 'Times New Roman', Times, serif; 
+    font-size: 16px;
+    line-height: 1.5; 
+    font-weight: normal; 
+    -webkit-text-size-adjust: 100%; 
+    color: var(--text);
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+p em {
+    font-family: inherit; 
+    font-size: 16px;
+    line-height: 1.5; 
+    font-weight: normal; 
+    font-style: italic;
+    -webkit-text-size-adjust: 100%; 
+}
+
+p strong {
+    font-family: 'baskervville', 'Times New Roman', Times, serif; 
+    font-size: 16px;
+    line-height: 1.5; 
+    font-weight: normal; 
+    text-decoration: underline;
+    -webkit-text-size-adjust: 100%; 
+}
+
+p strong em {
+    font-family: 'baskervville-italic', 'Times New Roman', Times, serif; 
+    font-size: 16px;
+    line-height: 1.5; 
+    font-weight: normal; 
+    font-style: italic;
+    -webkit-text-size-adjust: 100%; 
+}
+
+/** Headings */
+
+h1 { 
+    font-family: 'reglo';
+    font-size: var(--h1-size);
+    line-height: var(--heading-line-height);
+    text-transform: uppercase;
+    margin-bottom: var(--heading-margin-bottom); 
+    padding: var(--heading-padding);
+}
+
+h2 { 
+    font-family: 'reglo';
+    font-size: var(--h2-size);
+    line-height: var(--heading-line-height);
+    text-transform: uppercase;
+    margin-bottom: var(--heading-margin-bottom); 
+    padding: var(--heading-padding);
+}
+
+h3 { 
+    font-family: 'reglo';
+    line-height: var(--heading-line-height);
+    font-size: var(--h3-size);
+    text-transform: uppercase;
+    margin-bottom: var(--heading-margin-bottom); 
+    padding: var(--heading-padding);
+}
+
+h4 { 
+    font-family: 'reglo';
+    font-size: var(--h4-size);
+    line-height: var(--heading-line-height);
+    text-transform: uppercase;
+    margin-bottom: var(--heading-margin-bottom); 
+    padding: var(--heading-padding);
+}
+
+h5 { 
+    font-family: 'avara';
+    font-weight: bold;
+    font-size: var(--h5-size);
+    line-height: var(--heading-line-height);
+    margin-bottom: var(--heading-margin-bottom); 
+    padding: var(--heading-padding);
+}
+
+h6 { 
+    font-family: 'avara';
+    font-weight: bold;
+    font-size: var(--h6-size);
+    line-height: var(--heading-line-height);
+    margin-bottom: var(--heading-margin-bottom); 
+    padding: var(--heading-padding);
+}
+
+h1 h2 h3 h4 em {
+    text-decoration: underline;
+}
+
+/** Posts */
+
+.post-header { margin-bottom: 30px; }
+
+.post-title { font-size: 26px; letter-spacing: -1px; line-height: 1; }
+@media screen and (max-width: 800px) { .post-title { font-size: 26px; } }
+
+.post-content { margin-bottom: 30px; }
+.post-content h2 { font-size: var(--h2-size); }
+@media screen and (max-width: 800px) { .post-content h2 { font-size: 24px; } }
+.post-content h3 { font-size: var(--h3-size); }
+@media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
+.post-content h4 { font-size: var(--h4-size); }
+@media screen and (max-width: 800px) { .post-content h4 { font-size: 20px; } }
+
+#post-nav { padding-top: 25px; }
+
+#post-nav .prev { padding-right: 10px; }
+
+/** Lists */
+ul, ol { margin-left: 30px; }
+
+li > ul, li > ol { margin-bottom: 0; }
+
+
+/** Blockquotes */
+blockquote { 
+    font-family: 'baskerville';
+    background-color: var(--blockquote); 
+    border-left:  solid var(--blockquote-border); 
+    padding: 1em; 
+    font-size: 18px;
+    font-style: italic; 
+}
+
+blockquote > :last-child { margin-bottom: 0; }
+
+/** Code formatting */
+pre, code { 
+    font-family: 'baskerville';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px; 
+    border: 1px solid; 
+    border-radius: 3px; 
+    background-color: var(--code); }
+
+code { padding: 1px 5px; }
+
+pre { padding: 8px 12px; overflow-x: scroll; }
+pre > code { border: 0; padding-right: 0; padding-left: 0; }

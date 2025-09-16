@@ -1,0 +1,50 @@
+/* Fonts */
+
+/* Reglo Bold */
+
+@font-face{
+	font-family: 'reglo';
+	src: url('/webfonts/Reglo/Reglo-Bold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+/* Avara */
+
+@font-face {
+    font-family: 'avara';
+    src: url('/webfonts/Avara/Bold/Avara-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avara';
+    src: url('/webfonts/Avara/BoldItalic/Avara-BoldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'avara';
+    src: url('/webfonts/Avara/Black/Avara-Black.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Baskervville */
+
+@font-face {
+    font-family: 'baskervville';
+    src: url('/webfonts/Baskervville/Baskervville-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'baskervville-italic';
+    src: url('/webfonts/Baskervville-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
