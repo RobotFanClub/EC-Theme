@@ -113,6 +113,9 @@ h1, h2, h3, h4, h5, h6 {
 
 img { width: var(--width-content); height: auto; vertical-align: middle; }
 
+.image-link-expand {
+    display: none;
+}
 
 /** Buttons and Bits **/
 
