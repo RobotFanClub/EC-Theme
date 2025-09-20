@@ -109,7 +109,7 @@ h1 h2 h3 h4 em {
 
 .post-header { margin-bottom: 30px; }
 
-.post-title { font-size: 26px; letter-spacing: -1px; line-height: 1; }
+.post-title { font-size: var(--h1-size); letter-spacing: -1px; line-height: 1; }
 @media screen and (max-width: 800px) { .post-title { font-size: 26px; } }
 
 .post-content { margin-bottom: 30px; }
@@ -132,11 +132,11 @@ li > ul, li > ol { margin-bottom: 0; }
 
 /** Blockquotes */
 blockquote { 
-    font-family: 'baskerville';
     background-color: var(--blockquote); 
     border-left:  solid var(--blockquote-border); 
     padding: 1em; 
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.125em;
     font-style: italic; 
 }
 

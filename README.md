@@ -1,5 +1,7 @@
 
-# Everyone's Creative - Custom Micro.Blog Theme
+![](/static/assets/Logo-Main-Blobs.png)
+
+## Custom micro.blog Theme
 
 This is a custom theme built as a test for migrating my newsletter [Everyone's Creative](https://www.everyonescreative.net/) off of Substack and onto [micro.blog](https://micro.blog/).
 

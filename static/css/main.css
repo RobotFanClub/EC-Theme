@@ -3,10 +3,24 @@
 @import url('./theme-fonts.css');
 @import url('./theme-text-styling.css');
 
+/** Main Site Structure **/
+
+body {
+    background-color: var(--background);
+}
+
 /** Links */
 a { color: var(--link); text-decoration: underline; }
 a:visited { color: var(--link_visited); }
 a:hover { color: var(--accent1); text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+
+    a { color: var(--text); text-decoration: none; }
+    a:visited { color: var(--text);}
+    a:hover { color: var(--text); text-decoration: underline;}
+
+}
 
 /** Site header */
 
@@ -30,7 +44,9 @@ a:hover { color: var(--accent1); text-decoration: underline; }
     white-space: nowrap;
 }
 
-.site-title, .site-title:visited { color: var(--ec-black); }
+.site-title, .site-title:visited { color: var(--text); }
+
+.site-title:hover { text-decoration: none; }
 
 .header-icon {
     height: 50px;
@@ -40,7 +56,7 @@ a:hover { color: var(--accent1); text-decoration: underline; }
 
 .site-nav { float: right; line-height: 70px; }
 .site-nav .menu-icon { display: none; }
-.site-nav .page-link { color: #111111; line-height: 1; font-family: 'reglo'; text-transform: uppercase; }
+.site-nav .page-link { color: var(--text); line-height: 1; font-family: 'reglo'; text-transform: uppercase; text-decoration: none;}
 .site-nav .page-link:not(:first-child) { margin-left: 20px; }
 @media screen and (max-width: 649px) {
     .site-nav { position: absolute; top: 9px; right: 30px; background-color: #fdfdfd; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; }
@@ -52,6 +68,10 @@ a:hover { color: var(--accent1); text-decoration: underline; }
     .site-nav .page-link { display: block; padding: 5px 10px; } 
     .site-title { font-size: 20px; }
     .header-icon { height: 30px; width: auto; }
+}
+
+.page-link:hover {
+    text-decoration: underline;
 }
 
 /* width-styling */
@@ -92,3 +112,151 @@ a:hover { color: var(--accent1); text-decoration: underline; }
 /** Default image width is the same as text width */
 
 img { width: var(--width-content); height: auto; vertical-align: middle; }
+
+
+/** Buttons and Bits **/
+
+.button {
+    background-color: var(--ec-yellow);
+    padding: 0.5em 1em;
+    margin-bottom: 0;
+    border-radius: 0;
+    width: fit-content;
+    height: auto;
+    font-family: 'reglo';
+    line-height: 1;
+    text-decoration: none;
+    color: var(--ec-black);
+}
+
+.button a { text-decoration: none; color: var(--ec-black); text-transform: uppercase; }
+
+.button:hover { background-color: var(--text); }
+.button:hover a { color: var(--background); }
+
+/** Form Fields **/
+
+input {
+    font-family: 'baskervville';
+}
+
+input[type=text] {
+    padding: 1em;
+    margin: 1em 0em;
+}
+
+input[type=submit] {
+    padding: 1em;
+    border-radius: 0%;
+    background-color: var(--ec-yellow);
+    border: none;
+}
+
+/** Homepage Styling **/
+
+.homepage-overview {
+    display: grid;
+	grid-template-columns: 100%;
+	flex-wrap: wrap;
+	gap: 20px;
+	align-items: start;
+	padding-top: .5em;
+	padding-bottom: 2em;
+	max-width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.homepage-featured {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 40% auto;
+    align-items: center;
+}
+
+.featured-title {
+    font-family: var(--reglo);
+    font-size: var(--h1-size);
+    padding: 0;
+    margin: 0;
+}
+
+.featured-summary {
+    font-family: var(--baskervville);
+    text-transform: capitalize;
+    font-size: var(--h5-size);
+    padding: 0;
+    margin: 0;
+}
+
+.hpf-text {
+    display: grid;
+    gap: 1em;
+}
+
+.hpf-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.homepage-recent {
+    display: grid;
+    grid-template-columns: 33.33% auto auto ;
+    gap: 1em;
+}
+
+.post-preview {
+    padding: 0.5em;
+    border: var(--ec-black) 0px solid;
+    align-items: start;
+}
+
+.post-preview-title {
+    font-size: var(--h4-size);
+    margin: 0;
+}
+
+.post-preview-image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Homepage Responsive Styling */
+
+/* First breakpoint: homepage only */
+@media screen and (max-width: 900px) {
+    .featured-title {
+        font-size: var(--h3-size);
+    }
+}
+
+/* Second breakpoint: same as header menu toggle */
+@media screen and (max-width: 649px) {
+    .homepage-featured {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: auto;
+        align-items: start;
+    }
+
+    .hpf-img {
+        order: 0;
+        height: 250px;
+        width: 100%;
+    }
+
+    .hpf-text {
+        order: 1;
+    }
+
+    .homepage-recent {
+        grid-template-columns: auto auto;
+    }
+
+    .post-preview-image {
+        height: 200px;
+    }
+}

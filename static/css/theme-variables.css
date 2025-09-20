@@ -1,6 +1,12 @@
 /* Light mode */
 :root {
 
+	/* Font Families */
+
+	--reglo: 'reglo', Arial, Helvetica, sans-serif;
+	--avara: 'avara', Georgia, 'Times New Roman', Times, serif;
+	--baskervville: 'baskervville', Georgia, 'Times New Roman', Times, serif;
+
     /* Brand Colours */
 
     --ec-black: #000000;
@@ -9,6 +15,7 @@
     --ec-yellow: #fcaf16;
     --ec-blue: #0082c7;
     --ec-green: #32922f;
+	--ec-gray: #ececec;
 
 	--text: var(--ec-black);
 	--link: var(--ec-blue);
@@ -18,7 +25,7 @@
 	--background: var(--ec-white);
 	--code: var(--ec-yellow);
 	--button-text: var(--ec-white);
-	--blockquote: var(--ec-blue);
+	--blockquote: var(--ec-gray);
 	--blockquote-border: var(--ec-black);
 	--aside: #e0f7fa;
 	--aside-border: #0097a7;
@@ -38,12 +45,12 @@
 
     /* Page Width Control */
     --width-content: 40rem;
-    --width-content-medium: 60rem;
+    --width-content-medium: 45rem;
     --width-content-large: 90rem;
 
 
 	/* Global Responsive Styling */
-	--mobile-width: 650px;
+	--mobile-width: 649px;
 
     /* Copying Gutter Setup from a Tutorial */
 
@@ -51,12 +58,12 @@
     --width-site-gutter: var(--space-m);
 
     /* Standardizing Heading Styling for All Sub-Classes */
-    --h1-size: 64px;
-    --h2-size: 54px;
-    --h3-size: 42px;
-    --h4-size: 38px;
-    --h5-size: 30px;
-    --h6-size: 26px;
+    --h1-size: 4em;
+    --h2-size: 2.5em;
+    --h3-size: 2em;
+    --h4-size: 1.75em;
+    --h5-size: 1.5em;
+    --h6-size: 1em;
 
     --heading-line-height: 100%;
     --heading-padding: 0.5em 0em 0.25em 0em;
@@ -67,6 +74,9 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
+
+		--ec-gray: #323232;
+		
 		--text: var(--ec-white);
 		--link: var(--ec-blue);
 		--link_visited: #6439c9;

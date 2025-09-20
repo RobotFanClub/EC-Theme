@@ -2,7 +2,15 @@
 
   <div class="large-width-content">
 
-    <a class="site-title" href="/"><img class="header-icon" src="/assets/Icon_Blobs.svg">{{ .Site.Title }}</a>
+    <a class="site-title" href="/">
+      <picture>
+        <source
+          srcset="/assets/Icon_RevBlobs.svg"
+          media="(prefers-color-scheme: dark)"/>
+        <img class="header-icon" src="/assets/Icon_Blobs.svg">
+      </picture>
+      {{ .Site.Title }}
+    </a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
