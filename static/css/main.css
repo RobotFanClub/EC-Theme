@@ -238,6 +238,12 @@ input[type=submit] {
 
 /* Second breakpoint: same as header menu toggle */
 @media screen and (max-width: 649px) {
+   
+    .homepage-overview {
+        padding-left: 1em;
+        padding-right: 1em;
+   }
+
     .homepage-featured {
         display: grid;
         gap: 1em;
@@ -262,4 +268,19 @@ input[type=submit] {
     .post-preview-image {
         height: 200px;
     }
+}
+
+/* Third breakpoint: fixing the "recent" section at very small widths */
+
+@media screen and (max-width: 479px) {
+
+    .homepage-overview {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+   }    
+
+    .homepage-recent {
+        grid-template-columns: auto;
+    }
+    
 }

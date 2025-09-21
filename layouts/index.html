@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="large-width-content">
   <div class="homepage-overview">
-    <div class="homepage-featured medium-width-content">
+    <div class="homepage-featured">
       {{ range first 1 (where .Site.Pages.ByDate.Reverse "Type" "post") }}
             <div class="hpf-text">
               <!-- Title -->
