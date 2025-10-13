@@ -129,9 +129,9 @@ hr {
 
 hr::before {
 	font-size: 2em;
-	content: "◙";
+	content: "⋯ ⊡ ⋯";
 	display: block;
-	color: var(--ec-gray);
+	color: var(--ec-yellow);
 }
 
 .button {
