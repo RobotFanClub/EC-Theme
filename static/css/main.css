@@ -284,3 +284,58 @@ input[type=submit] {
     }
     
 }
+
+/* Archive Page Styling */
+
+.archive-feed {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1em;
+    text-align: left;
+}
+
+.archive-preview {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    gap: 1em;
+}
+
+.archive-thumbnail {
+    width: auto;
+}
+
+.archive-preview-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.archive-info {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+/* Archive Page - First Breakpoint */
+
+@media screen and (max-width: 740px) {
+    .archive-preview {
+        display: flex;
+    }
+}
+
+/* Archive Page - Second Breakpoint */
+
+@media screen and (max-width: 479px) {
+    .archive-feed {
+        gap: 1.5em;
+    }
+    
+    .archive-preview {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5em;
+    }
+
+    
+}
