@@ -18,3 +18,10 @@ I'm not sure if this is the best solution, so for now I'm just hiding "substack_
 h2.substack_subtitle {
     display: none;
 }
+
+
+/* This is the button element from substack's Share and Subscribe buttons */
+
+.captioned-button-wrap {
+    display: none;
+}
