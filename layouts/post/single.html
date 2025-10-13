@@ -5,7 +5,7 @@
 	{{ if .Title }}
 	  	<h1>{{ .Title }}</h1>
   	{{ end }}
-	{{ if .Summary }}
+	{{ if .Params.custom_summary }}
 	  	<h2>{{ .Summary }}</h2>
   	{{ end }}
     <p class="post-meta">

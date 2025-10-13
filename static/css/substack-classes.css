@@ -1,0 +1,20 @@
+/* This stylesheet is set up to help handle importing Substack posts into micro.blog.
+Substack adds a lot of styling to the HTML that micro.blog doesn't strip out,
+so in order to avoid having to edit every post, the theme uses the Substack classes
+to do some styling. */
+
+
+/* The substack_subtitle class gets added as part of the post, and Hugo can't treat
+as a part of the post before the main content. The expected behaviour is for this to be
+the copy under the post title, but that ends up with the post date and other dynamic info
+put between the title and subtitle.
+
+The current solution I have is to add the contents of this H2 into the Summary of each post
+in micro.blog, which Hugo can work with to build the page and include this info. However,
+this requires going in and deleting the H2 from every post, and adding it as the Summary.
+
+I'm not sure if this is the best solution, so for now I'm just hiding "substack_subtitle" entirely.*/
+
+h2.substack_subtitle {
+    display: none;
+}
