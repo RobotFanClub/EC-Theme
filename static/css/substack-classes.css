@@ -20,8 +20,8 @@ h2.substack_subtitle {
 }
 
 
-/* This is the button element from substack's Share and Subscribe buttons */
+/* These are the button element from substack's Share and Subscribe buttons */
 
-.captioned-button-wrap {
+.captioned-button-wrap, .button-wrapper, .subscription-widget, .show-subscribe {
     display: none;
 }
