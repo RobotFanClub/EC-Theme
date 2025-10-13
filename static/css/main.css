@@ -120,6 +120,20 @@ img { width: var(--width-content); height: auto; vertical-align: middle; }
 
 /** Buttons and Bits **/
 
+hr {
+	margin: 1em 0;
+	border: none;
+	text-align: center;
+
+}
+
+hr::before {
+	font-size: 2em;
+	content: "◙";
+	display: block;
+	color: var(--ec-gray);
+}
+
 .button {
     background-color: var(--ec-yellow);
     padding: 0.5em 1em;
