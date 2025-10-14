@@ -6,6 +6,26 @@
 
 /** Main Site Structure **/
 
+/* width-styling */
+.wrapper > * { 
+	--width-max: var(--width-content);
+    margin-inline: auto;
+    max-inline-size: min(calc(100% - var(--width-site-gutter) * 2), var(--width-max));
+
+}
+
+.wrapper > .medium-width-content {
+    --width-max: var(--width-content-medium);
+}
+
+.wrapper > .large-width-content {
+    --width-max: var(--width-content-large);
+}
+
+.wrapper > .full-width-content {
+    max-inline-size: none;
+}
+
 body {
     background-color: var(--background);
 }
@@ -75,25 +95,72 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
-/* width-styling */
-.wrapper > * { 
-	--width-max: var(--width-content);
-    margin-inline: auto;
-    max-inline-size: min(calc(100% - var(--width-site-gutter) * 2), var(--width-max));
-
+/** Site footer */
+.site-footer { 
+    border-top: 1px solid var(--ec-black);
+    background-color: var(--ec-gray); 
+    background-size: cover;
+    padding: 50px; 
+    font-size: 14px;
 }
 
-.wrapper > .medium-width-content {
-    --width-max: var(--width-content-medium);
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 33.33% auto auto;
 }
 
-.wrapper > .large-width-content {
-    --width-max: var(--width-content-large);
+.footer-content {
+    width: 100%;
 }
 
-.wrapper > .full-width-content {
-    max-inline-size: none;
+.footer-navigation {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
+
+/* Fun party trick to have the fonts named appear on hover.
+Keeps the footer tidy looking when you're just reading it,
+but shows a sample of the font when you hover over it. */
+
+a.footer-fonts-reglo {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a.footer-fonts-reglo:hover {
+    font-family: 'reglo';
+    font-size: 15px;
+}
+
+a.footer-fonts-avara {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a.footer-fonts-avara:hover {
+    font-family: 'avara';
+    font-size: 14px;
+}
+
+/* Original theme footer styling 
+.footer-heading { font-size: 18px; margin-bottom: 15px; }
+
+.contact-list, .social-media-list { list-style: none; margin-left: 0; }
+
+.footer-col-wrapper { font-size: 15px; color: #828282; margin-left: -15px; }
+
+.footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
+
+.footer-col-1 { width: -webkit-calc(35% - (30px / 2)); width: calc(35% - (30px / 2)); }
+
+.footer-col-2 { width: -webkit-calc(20% - (30px / 2)); width: calc(20% - (30px / 2)); }
+
+.footer-col-3 { width: -webkit-calc(45% - (30px / 2)); width: calc(45% - (30px / 2)); }
+
+@media screen and (max-width: 800px) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); }
+  .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
+@media screen and (max-width: 600px) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
+*/
 
 /** Page content */
 .page-content { padding: inherit;}
@@ -128,15 +195,15 @@ hr {
 }
 
 hr::before {
-	font-size: 2em;
-	content: "⋯ ⊡ ⋯";
+	font-size: 1.25em;
+	content: "◙ ◙ ◙";
 	display: block;
 	color: var(--ec-yellow);
 }
 
 .button {
     background-color: var(--ec-yellow);
-    padding: 0.5em 1em;
+    padding: 0.5em 1em 0.3em 1em;
     margin-bottom: 0;
     border-radius: 0;
     width: fit-content;
@@ -181,8 +248,6 @@ input[type=submit] {
 	padding-top: .5em;
 	padding-bottom: 2em;
 	max-width: 100%;
-    padding-left: 2em;
-    padding-right: 2em;
 }
 
 .homepage-featured {
