@@ -1,10 +1,29 @@
-<footer class="full-width-content site-footer">
-
-  <div class="medium-width-content">
-
+<footer class="wrapper site-footer">
+  <div class="full-width-content">
     <div class="footer-wrapper">
       <div class="footer-content">
-        <p>Everyone's Creative is <a href="https://simonpeng.net/" target="_blank" title="Visit Simon Peng's personal website." alt="Link to simonpeng.net">Simon Peng</a></p>
+        <div>
+          <a href="/">
+            <img class="footer-logo" src="/assets/Logo-Name-Blobs.png">
+          </a>
+        </div>
+        <div class="footer-navigation">
+          <p><a href="/support">Support</a></p>
+          <p><a href="/about">About</a></p>
+        </div>
+        <div class="footer-navigation">
+          <form method="POST" action="https://micro.blog/users/subscribe/255704">
+            <div>
+              <input type="text" name="email" size="30" placeholder="Your email address" />
+              <input type="submit" value="Subscribe" />
+            </div>
+          </form>
+          <p class="rss-subscribe">or Subscribe <a href="{{ "feed.xml" | absURL }}">via RSS</a></p>
+        </div>
+      </div>
+      <div class="footer-content"></div>
+      <div class="footer-content">
+        <p><a href="https://simonpeng.net/" target="_blank" title="Visit Simon Peng's personal website." alt="Link to simonpeng.net">Simon Peng</a> is Everyone's Creative</p>
         <p>This site is hosted by <a href="https://micro.blog/" target="_blank" title="Micro.Blog Homepage" alt="Link to micro.blog">micro.blog.</a><br>The site theme can be found on <a href="https://github.com/RobotFanClub/EC-Theme" target="_blank" title="Everyone's Creative Micro.Blog theme on GitHub" alt="Link to Everyone's Creative theme on GitHub">GitHub</a></p>
         <p>This site uses the fonts<br> 
           <a  href="https://open-foundry.com/fonts/reglo_bold" 
@@ -26,17 +45,7 @@
               alt="Link to ANRT-Baskervville on GitHub">
               ANRT Baskervville</a>.
         </p>
-      </div></a>
-      <div class="footer-content"></div>
-      <div class="footer-content">
-        <div class="footer-navigation">
-          <p>Subscribe</p>
-          <p>Support</p>
-          <p>Contact</p>
-        </div>
       </div>
     </div>
-
   </div>
-
 </footer>

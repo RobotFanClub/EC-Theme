@@ -15,11 +15,14 @@
               <a href="{{ .Permalink }}" class="u-url"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time></span></a>
               
               <!-- Continue Button -->
-              <div class="button">
-                <a href="{{ .Permalink }}">
-                  <p>Continue Reading</p>
+              
+                <a  href="{{ .Permalink }}"
+                    class="button-link">
+                  <div class="button">
+                    <p>Continue Reading</p>
+                  </div>
                 </a>
-              </div>
+              
             </div>
             <div class="hpf-img">
               {{ if .Params.photos }}
@@ -53,12 +56,13 @@
           {{ end }}  
         {{ end }}
     </div>
-    <div class="button">
-      <p><a href="/archive">Full Archive</a></p>
-    </div>
-  </div>
-  <div>
-      <p class="rss-subscribe">subscribe <a href="{{ "feed.xml" | absURL }}">via RSS</a></p>
+    <!-- More Button -->
+    <a  href="/archive"
+        class="button-link">
+      <div class="button">
+        <p>Full Archive</p>
+      </div>
+    </a>
   </div>
 </div>
 {{ end }}

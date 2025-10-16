@@ -1,7 +1,7 @@
-@import url('./default-theme-style.css');
 @import url('./theme-variables.css');
 @import url('./theme-fonts.css');
 @import url('./theme-text-styling.css');
+@import url('./default-theme-style.css');
 @import url('./substack-classes.css');
 
 /** Main Site Structure **/
@@ -101,21 +101,33 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--ec-gray); 
     background-size: cover;
     padding: 50px; 
+    width: 100%;
+    margin-left: -0.6em;
+    margin-bottom: -2em;
     font-size: 14px;
 }
 
 .footer-wrapper {
     display: grid;
-    grid-template-columns: 33.33% auto auto;
+    grid-template-columns: 50% 20% 30%;
 }
 
 .footer-content {
     width: 100%;
 }
 
+img.footer-logo {
+    width: 400px;
+    height: auto;
+    margin-left: -6px;
+}
+
 .footer-navigation {
+    font-family: 'reglo';
+    text-transform: uppercase;
+    font-size: 16px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
 }
 
 /* Fun party trick to have the fonts named appear on hover.
@@ -214,10 +226,11 @@ hr::before {
     color: var(--ec-black);
 }
 
-.button a { text-decoration: none; color: var(--ec-black); text-transform: uppercase; }
+.button-link { text-decoration: none; color: var(--ec-black); text-transform: uppercase; }
+.button-link:hover { text-decoration: none; color: var(--ec-black); text-transform: uppercase; }
 
 .button:hover { background-color: var(--text); }
-.button:hover a { color: var(--background); }
+.button:hover p { color: var(--background); }
 
 /** Form Fields **/
 
@@ -235,6 +248,11 @@ input[type=submit] {
     border-radius: 0%;
     background-color: var(--ec-yellow);
     border: none;
+}
+
+input[type=submit]:hover {
+    color: var(--background);
+    background-color: var(--text);
 }
 
 /** Homepage Styling **/
@@ -372,6 +390,7 @@ input[type=submit] {
     grid-template-columns: 100%;
     gap: 1em;
     text-align: left;
+    margin-bottom: 3em;
 }
 
 .archive-preview {
