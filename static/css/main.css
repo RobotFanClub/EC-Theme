@@ -6,6 +6,11 @@
 
 /** Main Site Structure **/
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 /* width-styling */
 .wrapper > * { 
 	--width-max: var(--width-content);
@@ -41,6 +46,12 @@ h1, h2, h3, h4, h5, h6 {
     a:visited { color: var(--text);}
     a:hover { color: var(--text); text-decoration: underline;}
 
+}
+
+/** Partial Elements **/
+
+.subscribe-block {
+    font-size: 16px;
 }
 
 /** Site header */
@@ -97,37 +108,43 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Site footer */
 .site-footer { 
-    border-top: 1px solid var(--ec-black);
-    background-color: var(--ec-gray); 
-    background-size: cover;
-    padding: 50px; 
-    width: 100%;
-    margin-left: -0.6em;
-    margin-bottom: -2em;
+    margin-top: 4em;
     font-size: 14px;
+    position: sticky;
+    top: 100vh;
 }
 
 .footer-wrapper {
+    border-top: 0.5px solid var(--ec-black);
+    padding: 50px; 
     display: grid;
-    grid-template-columns: 50% 20% 30%;
+    grid-template-columns: 60% 40%;
 }
 
 .footer-content {
-    width: 100%;
+    width: auto;
 }
 
 img.footer-logo {
     width: 400px;
     height: auto;
     margin-left: -6px;
+    margin-bottom: 2em;
 }
 
 .footer-navigation {
     font-family: 'reglo';
     text-transform: uppercase;
     font-size: 16px;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.footer-fineprint {
+    font-size: 12px;
+    line-height: 1;
+    text-align: left;
 }
 
 /* Fun party trick to have the fonts named appear on hover.
@@ -141,7 +158,7 @@ a.footer-fonts-reglo {
 
 a.footer-fonts-reglo:hover {
     font-family: 'reglo';
-    font-size: 15px;
+    font-size: inherit;
 }
 
 a.footer-fonts-avara {
@@ -151,7 +168,7 @@ a.footer-fonts-avara {
 
 a.footer-fonts-avara:hover {
     font-family: 'avara';
-    font-size: 14px;
+    font-size: inherit;
 }
 
 /* Original theme footer styling 
@@ -175,7 +192,9 @@ a.footer-fonts-avara:hover {
 */
 
 /** Page content */
-.page-content { padding: inherit;}
+.page-content { 
+    padding: inherit;
+}
 
 .page-heading { font-size: 20px; }
 
@@ -264,7 +283,7 @@ input[type=submit]:hover {
 	gap: 20px;
 	align-items: start;
 	padding-top: .5em;
-	padding-bottom: 2em;
+	padding-bottom: 5em;
 	max-width: 100%;
 }
 
