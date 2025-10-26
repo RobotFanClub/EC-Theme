@@ -91,12 +91,12 @@ h1, h2, h3, h4, h5, h6 {
 .site-nav .page-link { color: var(--text); line-height: 1; font-family: 'reglo'; text-transform: uppercase; text-decoration: none;}
 .site-nav .page-link:not(:first-child) { margin-left: 20px; }
 @media screen and (max-width: 649px) {
-    .site-nav { position: absolute; top: 9px; right: 30px; background-color: #fdfdfd; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; }
+    .site-nav { position: absolute; top: 35px; right: 35px; background-color: var(--background); border: 1px solid var(--text); border-radius: 0px; text-align: right; z-index: 2;}
     .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; }
     .site-nav .menu-icon > svg { width: 18px; height: 15px; }
-    .site-nav .menu-icon > svg path { fill: #424242; }
+    .site-nav .menu-icon > svg path { fill: var(--text); }
     .site-nav .trigger { clear: both; display: none; }
-    .site-nav:hover .trigger { display: block; padding-bottom: 5px; }
+    .site-nav:hover .trigger { display: block; padding-bottom: 5px;}
     .site-nav .page-link { display: block; padding: 5px 10px; } 
     .site-title { font-size: 20px; }
     .header-icon { height: 30px; width: auto; }
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-wrapper {
-    border-top: 0.5px solid var(--ec-black);
+    border-top: 0.5px solid var(--text);
     padding: 50px; 
     display: grid;
     grid-template-columns: 60% 40%;

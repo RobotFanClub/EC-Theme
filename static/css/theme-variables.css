@@ -17,6 +17,8 @@
     --ec-green: #32922f;
 	--ec-gray: #ececec;
 
+	--dark-bg: #15111c;
+
 	--text: var(--ec-black);
 	--link: var(--ec-blue);
 	--link_visited: #3c00c7;
@@ -81,10 +83,10 @@
 		
 		--text: var(--ec-white);
 		--link: var(--ec-blue);
-		--link_visited: #6439c9;
+		--link_visited: #9b78ed;
 		--accent1: var(--ec-red);
 		--accent2: var(--ec-yellow);
-		--background: var(--ec-black);
+		--background: var(--dark-bg);
 		--code: var(--ec-yellow);	
 		--button-text: var(--ec-black);
 		--blockquote: #44475a;
