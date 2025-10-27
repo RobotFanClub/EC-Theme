@@ -1,7 +1,7 @@
 <footer class="site-footer">
 <div class="wrapper">
   <div class="large-width-content footer-wrapper">
-    <div class="footer-content"> <!-- Footer Col 1 -->
+    <div class="footer-content"> <!-- Footer Col 1, Row 1 -->
       <div>
         <a href="/">
           <picture>
@@ -12,16 +12,17 @@
           </picture>
         </a>
       </div>
-
-      {{ partial "site-credits.html" . }}
-  
     </div>
-    <div class="footer-content"> <!-- Footer Col 2 -->
+    <div class="footer-content"> <!-- Footer Col 2, Row 1 -->
 
       {{ partial "subscribe_block.html" . }}
       
     </div>
-  </div>
-  
+    <div class="footer-content"> <!-- Footer Col 1, Row 2 -->
+
+      {{ partial "site-credits.html" . }}
+
+    </div>
+  </div>  
 </div>
 </footer>

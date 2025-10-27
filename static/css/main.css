@@ -171,6 +171,27 @@ a.footer-fonts-avara:hover {
     font-size: inherit;
 }
 
+/* Mobile Footer */
+
+@media screen and (max-width: 800px) {
+    
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   
+    img.footer-logo {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
 /* Original theme footer styling 
 .footer-heading { font-size: 18px; margin-bottom: 15px; }
 
@@ -254,16 +275,21 @@ hr::before {
 /** Form Fields **/
 
 input {
-    font-family: 'baskervville';
+    font-family: 'reglo';
+    text-transform: uppercase;
+    padding: 1.2em 1.2em 1em 1.2em;
 }
 
 input[type=text] {
-    padding: 1em;
-    margin: 1em 0em;
+
+    margin: 0.5em 0em;
+    border-radius: 0%;
+    border: none;
+    background-color: var(--ec-gray);
 }
 
 input[type=submit] {
-    padding: 1em;
+
     border-radius: 0%;
     background-color: var(--ec-yellow);
     border: none;
@@ -272,6 +298,12 @@ input[type=submit] {
 input[type=submit]:hover {
     color: var(--background);
     background-color: var(--text);
+}
+
+.subscribe-cta {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /** Homepage Styling **/
