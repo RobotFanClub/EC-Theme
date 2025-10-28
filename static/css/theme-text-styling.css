@@ -56,6 +56,14 @@ h1 {
     padding: var(--heading-padding);
 }
 
+@media (prefers-color-scheme: dark) {
+    h1 {
+        font-family: 'avara';
+        font-size: var(--h2-size);
+        text-transform: inherit;
+    }
+}
+
 h2 { 
     font-family: 'reglo';
     font-size: var(--h2-size);
@@ -132,27 +140,46 @@ li > ul, li > ol { margin-bottom: 0; }
 
 /** Blockquotes */
 blockquote { 
-    background-color: var(--blockquote); 
-    border-left:  solid var(--blockquote-border); 
-    padding: 1em; 
     font-size: 16px;
-    line-height: 1.125em;
-    font-style: italic; 
+    line-height: 1.5em;
+    font-style: italic;
+
+    background-color: var(--blockquote);  
+
+    margin: 2em 2em;
+    padding: 1.5em 2.5em; 
 }
 
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
 pre, code { 
-    font-family: 'baskerville';
-    font-style: italic;
+    font-family: 'drafting-mono';
     font-weight: 300;
-    font-size: 15px; 
-    border: 1px solid; 
-    border-radius: 3px; 
-    background-color: var(--code); }
+    font-size: 14px; 
+    color: var(--code);
+    border-radius: 0px; 
+    background-color: var(--dark-bg);
+    max-height: 400px;
+    overflow-y: scroll;
+    margin: 2em;
+}
 
 code { padding: 1px 5px; }
 
-pre { padding: 8px 12px; overflow-x: scroll; }
-pre > code { border: 0; padding-right: 0; padding-left: 0; }
+pre { padding: 2em; text-wrap: wrap; }
+pre > code { border: 0;}
+
+@media (prefers-color-scheme: dark) {
+    pre, code {
+        background-color: var(--ec-gray);
+    }
+}
+
+/* Image Captions */
+
+.image-caption {
+    font-size: 14px;
+    font-style: italic;
+    margin: 0.5em 0.5em 0em 0.5em;
+}

@@ -23,7 +23,7 @@ li > ul, li > ol { margin-bottom: 0; }
 blockquote { color: var(--text); border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 14px; letter-spacing: -1px; font-style: italic; }
 blockquote > :last-child { margin-bottom: 0; }*/
 
-/** Code formatting */
+/** Code formatting 
 pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
 
 code { padding: 1px 5px; }

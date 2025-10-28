@@ -27,8 +27,8 @@
 	--background: var(--ec-white);
 	--code: var(--ec-yellow);
 	--button-text: var(--ec-white);
-	--blockquote: var(--ec-gray);
-	--blockquote-border: var(--ec-black);
+	--blockquote: #fcaf1614;
+	--blockquote-border: var(--ec-yellow);
 	--aside: #e0f7fa;
 	--aside-border: #0097a7;
 	--note: #e8f5e9;
@@ -89,8 +89,6 @@
 		--background: var(--dark-bg);
 		--code: var(--ec-yellow);	
 		--button-text: var(--ec-black);
-		--blockquote: #44475a;
-		--blockquote-border: #6272a4;
 		--aside: #6272a4;
 		--aside-border: #7797b7	;
 		--note: #3f444a;

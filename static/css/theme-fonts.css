@@ -44,7 +44,37 @@
 
 @font-face {
     font-family: 'baskervville-italic';
-    src: url('/webfonts/Baskervville-Italic.woff2') format('woff2');
+    src: url('/webfonts/Baskervville/Baskervville-Italic.woff2') format('woff2');
     font-weight: normal;
+    font-style: italic;
+}
+
+/* Drafting* Mono */
+
+@font-face {
+    font-family: 'drafting-mono';
+    src: url('/webfonts/DraftingMono/woff2/DraftingMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'drafting-mono';
+    src: url('/webfonts/DraftingMono/woff2/DraftingMono-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'drafting-mono';
+    src: url('/webfonts/DraftingMono/woff2/DraftingMono-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'drafting-mono';
+    src: url('/webfonts/DraftingMono/woff2/DraftingMono-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
     font-style: italic;
 }

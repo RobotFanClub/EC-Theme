@@ -171,6 +171,16 @@ a.footer-fonts-avara:hover {
     font-size: inherit;
 }
 
+a.footer-fonts-drafting {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a.footer-fonts-drafting:hover {
+    font-family: 'drafting-mono';
+    font-size: inherit;
+}
+
 /* Mobile Footer */
 
 @media screen and (max-width: 800px) {
