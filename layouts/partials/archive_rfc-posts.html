@@ -1,0 +1,54 @@
+<div class="large-width-content">
+    <img 
+        class="wrapping-image" 
+        src="/assets/RFC_SubstackCover_Test_02.png"
+        title="Robot Fan Club"
+        alt="Robot Fan Club">
+    <span class="wrapper medium-width-content">
+        <p>
+            Everyone's Creative began its life as Robot Fan Club, a blog/newsletter 
+            originally about a video game project, then evolving into being about 
+            my artwork and thoughts more generally.As Robot Fan Club evolved, I realized
+            I was less interested in sharing updates on my work and more interested in 
+            exploring the broader intersections of art, creativity, politics and our place in it all.<br>
+            That's why I renamed the project <em>Everyone's Creative,</em> but the core of
+            a lot of the spirit of this work can still be found in these older posts. 
+            For that reason, and to help reveal the reality of how this project has evolved,
+            the Robot Fan Club archive is still found below.
+        </p>
+    </span>
+</div>
+
+
+<div class="archive-feed medium-width-content">
+		
+    {{ $list := (where .Site.Pages "Type" "post") }}
+    {{ range where $list "Params.categories" "intersect" (slice "RobotFanClub") }}
+       
+        <div class="archive-preview">
+            
+            <div class="archive-thumbnail">
+                {{ if .Params.photos }}
+                    <a href="{{ .Permalink }}">
+                    {{ range first 1 .Params.photos }}
+                    <img class="archive-preview-image" src="{{ . }}" loading="lazy" />
+                {{ end }}
+                </a>
+            </div>
+            
+            <div class="archive-info">
+                {{ if .Title }}
+                    <h4 class="post-preview-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                {{ end }}
+                <div class="post-date">
+                    <a href="{{ .Permalink }}" class="u-url"><span><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time></span></a>
+                </div>
+            </div>
+        
+        </div>
+        
+    {{ end }}
+
+    {{ end }}
+
+</div>

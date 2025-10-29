@@ -1,0 +1,11 @@
+<div class="archive-categories">
+    <h3>Categories</h3>
+    {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+        {{ if gt (len $list) 0 }}
+            <div class="category-entries">
+                {{ range $list }}
+                    <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                {{ end }}
+            </div>
+    {{ end }}
+</div>

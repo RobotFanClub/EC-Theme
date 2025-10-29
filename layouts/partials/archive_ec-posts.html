@@ -1,0 +1,39 @@
+<div class="archive-feed medium-width-content">
+
+    {{ $list := (where .Site.Pages "Type" "post") }}
+    {{ $hidden_list := where $list "Params.categories" "intersect" (slice "RobotFanClub") }}
+    {{ $list = $list | symdiff $hidden_list }}
+            
+        {{ range $list }}
+            
+            <div class="archive-preview">
+            
+                <div class="archive-thumbnail">
+                    
+                    {{ if .Params.photos }}
+                        <a href="{{ .Permalink }}">
+                        
+                            {{ range first 1 .Params.photos }}
+                            
+                            <img class="archive-preview-image" src="{{ . }}" loading="lazy" />
+                    
+                            {{ end }}
+
+                        </a>
+                </div>
+
+                <div class="archive-info">
+                    {{ if .Title }}
+                        <h4 class="post-preview-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                    {{ end }}
+                    <div class="post-date">
+                        <a href="{{ .Permalink }}" class="u-url"><span><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time></span></a>
+                    </div>
+                </div>
+            </div>
+				
+        {{ end }}
+
+    {{ end }}
+    
+</div>
