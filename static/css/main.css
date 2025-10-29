@@ -247,6 +247,16 @@ img { width: var(--width-content); height: auto; vertical-align: middle; }
     display: none;
 }
 
+.wrapping-image {
+    float: left;
+    margin-right: 1em;
+}
+
+.wrapping-text {
+    margin-left: 5em;
+    margin-right: auto;
+}
+
 /** Buttons and Bits **/
 
 hr {
@@ -446,6 +456,21 @@ input[type=submit]:hover {
 
 /* Archive Page Styling */
 
+.archive-wrapper {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.archive-categories {
+    visibility: inherit;
+}
+
+.category-entries {
+    font-family: 'drafting-mono';
+    font-size: 14px;
+    border-bottom: none;
+}
+
 .archive-feed {
     display: grid;
     grid-template-columns: 100%;
@@ -476,11 +501,28 @@ input[type=submit]:hover {
     grid-template-rows: auto;
 }
 
+.archive-section {
+    display: inline;
+    gap: 3em;
+    margin: 50px;
+    justify-content: start;
+    
+}
+
 /* Archive Page - First Breakpoint */
 
 @media screen and (max-width: 740px) {
+
+    .archive-wrapper {
+        grid-template-columns: auto;
+    }
+
     .archive-preview {
         display: flex;
+    }
+
+    .archive-categories {
+        display: none;
     }
 }
 
