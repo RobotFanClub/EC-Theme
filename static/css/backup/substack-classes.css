@@ -25,3 +25,32 @@ h2.substack_subtitle {
 .captioned-button-wrap, .button-wrapper, .subscription-widget, .show-subscribe {
     display: none;
 }
+
+/*  Images from substack are burried in multiple layers of classes.
+    I'm leaving this commented out until I figure out the best way to work with these.
+
+.captioned-image-container {
+    
+}
+
+.image-link {
+    
+}
+
+.image2 {
+
+}
+
+.is-viewable-img {
+
+}
+
+.image2-inset {
+
+}
+
+.sizing-large {
+    
+}
+
+*/

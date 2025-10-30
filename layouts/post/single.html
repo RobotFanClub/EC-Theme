@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="post h-entry medium-width-content">
+<div class="variable-width-wrapper">
 
-  <header class="post-header">
+  <header class="post-header medium-width-content">
 	{{ if .Title }}
 	  	<h1>{{ .Title }}</h1>
   	{{ end }}
@@ -19,7 +19,7 @@
 	</p>
   </header>
 
-  <article class="post-content e-content">
+  <article class="post-content e-content width-content">
 	{{ .Content }}
   </article>
 

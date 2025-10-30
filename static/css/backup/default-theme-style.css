@@ -31,7 +31,7 @@ code { padding: 1px 5px; }
 pre { padding: 8px 12px; overflow-x: scroll; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
-/** Wrapper */
+/** Wrapper 
 
 .wrapper { 
 	max-width: -webkit-calc(800px - (30px * 2)); 
@@ -48,10 +48,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 		max-width: calc(800px - (30px)); 
 		padding-right: 15px; 
 		padding-left: 15px; } 
-	}
-
-/** Clearfix
-.wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; } */
+	}*/
 
 /** Icons */
 .icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
