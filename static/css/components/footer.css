@@ -1,0 +1,98 @@
+/** Site footer */
+.site-footer { 
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    position: sticky;
+    top: 100vh;
+    border-top: 0.5px solid var(--text);
+    padding: 30px 50px;
+    max-width: var(--width-content-large);
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 66% 33%;
+}
+
+.footer-content {
+    width: auto;
+}
+
+img.footer-logo {
+    width: 400px;
+    height: auto;
+    margin-left: -6px;
+    margin-bottom: 2em;
+}
+
+.footer-navigation {
+    font-family: 'reglo';
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.footer-fineprint {
+    font-size: 12px;
+    line-height: 1;
+    text-align: left;
+}
+
+/* Fun party trick to have the fonts named appear on hover.
+Keeps the footer tidy looking when you're just reading it,
+but shows a sample of the font when you hover over it. */
+
+a.footer-fonts-reglo {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a.footer-fonts-reglo:hover {
+    font-family: 'reglo';
+    font-size: inherit;
+}
+
+a.footer-fonts-avara {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a.footer-fonts-avara:hover {
+    font-family: 'avara';
+    font-size: inherit;
+}
+
+a.footer-fonts-drafting {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a.footer-fonts-drafting:hover {
+    font-family: 'drafting-mono';
+    font-size: inherit;
+}
+
+/* Mobile Footer */
+
+@media screen and (max-width: 800px) {
+    
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   
+    img.footer-logo {
+        width: 100%;
+        height: auto;
+    }
+    
+}

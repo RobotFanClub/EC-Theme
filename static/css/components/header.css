@@ -1,0 +1,55 @@
+/** Site header */
+
+.site-header { 
+    padding: 30px 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50px; 
+    position: relative; 
+    align-content: center;
+    max-width: var(--width-content-large);
+}
+
+.site-title { 
+    font-family: 'reglo';
+    text-transform: uppercase;
+    font-size: 26px; 
+    line-height: 56px; 
+    letter-spacing: -1px; 
+    margin-bottom: 0; 
+    float: left; 
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.site-title, .site-title:visited { color: var(--text); }
+
+.site-title:hover { text-decoration: none; }
+
+.header-icon {
+    height: 50px;
+    width: auto;
+    margin: 0.5em;
+}
+
+.site-nav { float: right; line-height: 70px; }
+.site-nav .menu-icon { display: none; }
+.site-nav .page-link { color: var(--text); line-height: 1; font-family: 'reglo'; text-transform: uppercase; text-decoration: none;}
+.site-nav .page-link:not(:first-child) { margin-left: 20px; }
+
+@media screen and (max-width: 649px) {
+    .site-nav { position: absolute; top: 35px; right: 35px; background-color: var(--background); border: 1px solid var(--text); border-radius: 0px; text-align: right; z-index: 2;}
+    .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; }
+    .site-nav .menu-icon > svg { width: 18px; height: 15px; }
+    .site-nav .menu-icon > svg path { fill: var(--text); }
+    .site-nav .trigger { clear: both; display: none; }
+    .site-nav:hover .trigger { display: block; padding-bottom: 5px;}
+    .site-nav .page-link { display: block; padding: 5px 10px; } 
+    .site-title { font-size: 20px; }
+    .header-icon { height: 30px; width: auto; }
+}
+
+.page-link:hover {
+    text-decoration: underline;
+}

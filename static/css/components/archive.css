@@ -1,0 +1,91 @@
+/* Archive Page Styling */
+
+.archive-wrapper {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    align-content: start;
+}
+
+.archive-categories {
+    visibility: inherit;
+}
+
+.category-entries {
+    font-family: 'drafting-mono';
+    font-size: 14px;
+    border-bottom: none;
+}
+
+.archive-feed {
+    display: grid;
+    gap: 1em;
+    text-align: left;
+    margin-bottom: 3em;
+    max-width: var(--width-content);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive-preview {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    gap: 2em;
+}
+
+.archive-thumbnail {
+    width: auto;
+}
+
+.archive-preview-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.archive-info {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.archive-section {
+    display: inline;
+    gap: 3em;
+    margin: 50px;
+    justify-content: start;
+    
+}
+
+/* Archive Page - First Breakpoint */
+
+
+@media screen and (max-width: 1065px) {
+
+    .archive-wrapper {
+        grid-template-columns: auto;
+    }
+
+    .archive-preview {
+        display: flex;
+    }
+
+    .archive-categories {
+        display: none;
+    }
+}
+
+/* Archive Page - Second Breakpoint */
+
+@media screen and (max-width: 479px) {
+    .archive-feed {
+        gap: 1.5em;
+    }
+    
+    .archive-preview {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5em;
+    }
+
+    
+}
