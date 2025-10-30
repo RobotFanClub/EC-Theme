@@ -1,0 +1,24 @@
+@import url(./theme-variables.css);
+
+/* width-styling */
+
+.variable-width-wrapper > * { 
+
+	--width-max: var(--width-content);
+
+    margin-inline: auto;
+    max-inline-size: min(calc(100% - var(--width-site-gutter) * 2), var(--width-max));
+
+}
+
+.variable-width-wrapper > .medium-width-content {
+    --width-max: var(--width-content-medium);
+}
+
+.variable-width-wrapper > .large-width-content {
+    --width-max: var(--width-content-large);
+}
+
+.variable-width-wrapper > .full-width-content {
+    max-inline-size: none;
+}

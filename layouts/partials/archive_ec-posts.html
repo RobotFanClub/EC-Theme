@@ -1,4 +1,4 @@
-<div class="archive-feed medium-width-content">
+<div class="archive-feed">
 
     {{ $list := (where .Site.Pages "Type" "post") }}
     {{ $hidden_list := where $list "Params.categories" "intersect" (slice "RobotFanClub") }}
@@ -23,12 +23,15 @@
                 </div>
 
                 <div class="archive-info">
+                    
                     {{ if .Title }}
                         <h4 class="post-preview-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
                     {{ end }}
+                    
                     <div class="post-date">
                         <a href="{{ .Permalink }}" class="u-url"><span><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time></span></a>
                     </div>
+                
                 </div>
             </div>
 				

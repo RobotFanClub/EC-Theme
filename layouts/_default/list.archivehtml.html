@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+<div class="variable-width-wrapper">
+
 	<h1 class="large-width-content">Archive</h1>
 
 	<div class="archive-wrapper large-width-content">
@@ -10,11 +12,13 @@
 
 	</div>
 
-	<div class="wrapper archive-section">
+	<div class="medium-width-content">
 
 		{{ partial "archive_rfc-posts.html" . }}
 
 	</div>
+
+</div>
 
 {{ end }}
 
