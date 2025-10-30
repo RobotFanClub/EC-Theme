@@ -1,11 +1,12 @@
-<div class="large-width-content">
+<div class="archive-feed medium-width-content" style="border-top: 1px solid var(--ec-yellow); padding-top: 2em;">
     <img 
-        class="wrapping-image" 
+        height="250px"
+        width="auto"
         src="/assets/RFC_SubstackCover_Test_02.png"
         title="Robot Fan Club"
         alt="Robot Fan Club"
-        style="margin-top: -2em; margin-bottom: -1em;">
-    <span class="">
+        >
+    <div>
         <p>
             Everyone's Creative began its life as Robot Fan Club, a blog/newsletter 
             originally about a video game project, then evolving into being about 
@@ -17,11 +18,7 @@
             For that reason, and to help reveal the reality of how this project has evolved,
             the Robot Fan Club archive is still found below.
         </p>
-    </span>
-</div>
-
-
-<div class="archive-feed medium-width-content">
+    </div>
 		
     {{ $list := (where .Site.Pages "Type" "post") }}
     {{ range where $list "Params.categories" "intersect" (slice "RobotFanClub") }}

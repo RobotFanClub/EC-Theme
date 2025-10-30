@@ -189,7 +189,7 @@ input[type=submit]:hover {
 
 .hpf-img {
     width: 100%;
-    height: 100%;
+    height: 450px;
     object-fit: cover;
     text-align: center;
 }
