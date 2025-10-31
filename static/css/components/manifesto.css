@@ -1,0 +1,19 @@
+/* Specialized styling for the Manifesto page */
+
+.manifesto-item {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.manifesto-row-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    align-items: center;
+}
+
+.manifesto-thumbnail {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+}
