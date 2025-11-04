@@ -1,0 +1,62 @@
+/* Styling for support page */
+
+.support-heading {
+    transform-origin: left;
+    transition: transform 0.2s ease-out;
+}
+
+.support-heading:hover {
+    transform-origin: left;
+    transform: rotate(-1deg);
+    transition: transform 0.2s ease-out;
+}
+
+.support-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    width: 100%;
+}
+
+.support-section h4 {
+    margin: 0em;
+    padding: 0em;
+}
+
+.support-block {
+    border: 2px solid var(--background);
+    background-color: var(--background);
+    padding: 2em;
+    transition: background 0.3s ease-in-out;
+    display: grid;
+    justify-content: space-between;
+}
+
+.support-block:hover {
+    background-color: var(--ec-gray);
+    transition: background 0.3s ease-in-out;
+}
+
+.support-image {
+    width: 100%;
+    height: auto;
+    transition: 0.4s ease-in-out;
+}
+
+.heading-hand {
+    width: 100px;
+    height: auto;
+    position: relative;
+    left: 30px;
+    top: -45px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .heading-hand {
+        filter: invert(1);
+    }
+
+    .support-image {
+        filter: invert(1);
+    }
+}

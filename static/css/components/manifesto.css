@@ -5,15 +5,33 @@
     grid-template-rows: auto auto;
 }
 
+.manifesto-title {
+    margin-bottom: -0.7em;
+    padding-left: 0.3em;
+}
+
+.avara-swap {
+    font-family: 'avara'; 
+    font-size: 32px;
+}
+
 .manifesto-row-2 {
     display: grid;
     grid-template-columns: auto auto;
     gap: 1em;
-    align-items: center;
+    align-items: start;
 }
 
 .manifesto-thumbnail {
     height: 150px;
     width: 200px;
     object-fit: cover;
+    z-index: 1;
+    filter: invert(1);
+    mix-blend-mode: difference;
+    background-color: var(--ec-black);
+}
+
+.manifesto-text {
+    padding-top: 0.5em;
 }
