@@ -1,24 +1,68 @@
 {{ define "main" }}
-<div class="home h-feed">
 
-  <ul class="post-list">
-	{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
-	{{ range $paginator.Pages  }}
-      <li class="h-entry">
-		{{ if .Title }}
-			<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-		{{ end }}
+<div class="variable-width-wrapper">
+  
+  <div class="large-width-content">
 
-        <a href="{{ .Permalink }}" class="u-url"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+	<h2>Archive</h2>
+  <h1>{{ .Title }}</h1>
 
-        <div class="e-content">
-         	{{ .Content }}
+  </div>
+
+	<div class="archive-wrapper large-width-content">
+		
+		<div>
+      <a class="button-link" href="/archive" target="_self" alt="Back to the main archive page.">
+        <div class="button">
+          <p>Back to archive</p>
         </div>
-      </li>
-    {{ end }}
-  </ul>
+      </a>
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "feed.xml" | absURL }}">via RSS</a></p>
+    {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
+      
+    {{ range $paginator.Pages  }}
+
+    <div class="archive-feed large-width-content">
+
+        <div class="archive-preview">
+
+          <div class="archive-thumbnail">
+                      
+            {{ if .Params.photos }}
+                
+              <a href="{{ .Permalink }}">
+            
+                {{ range first 1 .Params.photos }}
+                
+                <img class="archive-preview-image" src="{{ . }}" loading="lazy" />
+        
+                {{ end }}
+
+              </a>
+          </div>
+
+          <div class="archive-info">
+              
+              {{ if .Title }}
+                  <h4 class="post-preview-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+              {{ end }}
+              
+              <div class="post-date">
+                  <a href="{{ .Permalink }}" class="u-url"><span><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time></span></a>
+              </div>
+          
+          </div>
+            
+        </div>
+
+      {{ end }}
+
+    </div>
+
+ 
+  </div>
 
 </div>
+  {{ end }}
 {{ end }}
