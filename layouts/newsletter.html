@@ -1,3 +1,7 @@
+<!-- Loading in email stylesheet for designing - delete this section on final newsletter.html -->
+<link rel="stylesheet" href="/static/custom.css">
+
+<!-- Start of actual newsletter.html file -->
 <style>
 	.microblog_permalink {
 		color: gray;
@@ -13,62 +17,101 @@
 
 <div class="microblog_email">
 
-	<p class="microblog_header">
-	<img src="{{ .Site.Author.avatar }}" width="30" height="30" alt="Profile icon" style="border-radius: 15px; vertical-align: middle;">
-	<b>{{ .Site.Title }}</b>
-	— <a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe</a>
+	<div class="email-header">
+		<img 	src="/static/assets/Logo-Name-Blobs.png" 
+				width="auto" height="70px" 
+				alt="Everyone's Creative Logo" 
+				vertical-align: middle;
+				style=" padding-bottom: 0.5em;">
+	<div class="microblog_divider"></div>
+		<div class="email-fineprint">
+			<p>
+			{{ if eq (len .Pages) 1 }}
+				{{ with index .Pages 0 }}
+					<a href="{{ .Permalink }}">Read this post in your browser.</a>
+				{{ end }}
+			{{ end }}	
+			</p>
+			<p>
+				Don't want to receive these emails anymore?
+				You can <a href="{{ .Footer.UnsubscribeURL }}">unsubscribe</a> anytime.</p>
+		</div>
+	</div>
 
-	{{ if gt (len .Intro) 0 }}
-		<p>
-		<hr>
 
-		<p>
-		{{ .Intro }}
-	{{ end }}
+	<div class="email-body">
 
-	<p>
-	<hr>
+		{{ if gt (len .Intro) 0 }}
+			<p>
+			
 
-	{{ range .Pages }}
-
-		{{ if .Title }}
-			<b>{{ .Title }}</b>
+			<p>
+			{{ .Intro }}
 		{{ end }}
 
 		<p>
-		{{ .Content }}
-
-		<p>
-		{{ if gt (len .Params.audio) 0 }}
-			<a href="{{ .Permalink }}">Audio</a>
-		{{ end }}
-
-		{{ if gt (len .Params.video) 0 }}
-			<a href="{{ .Permalink }}">Video</a>
-		{{ end }}
-
-		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "2006-01-02" }}</a>
-
-		<hr>
-
-	{{ end }}
-
-	<div class="microblog_footer">
-
-		<p>
-		<a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe</a> <span class="microblog_divider">|</span> 
 		
-		{{ if eq (len .Pages) 1 }}
-			{{ with index .Pages 0 }}
-				<a href="{{ .Permalink }}">View in browser</a> <span class="microblog_divider">|</span> 
+
+		{{ range .Pages }}
+
+			{{ if .Title }}
+				<b>{{ .Title }}</b>
 			{{ end }}
-		{{ end }}		
-		
-		<a href="{{ .Site.BaseURL }}">{{ .Site.Hostname }}</a>
-		
-		{{ if gt (len .Footer.MailingAddress) 0 }}
-			<span class="microblog_divider">|</span> {{ .Footer.MailingAddress }}
+
+			<p>
+			{{ .Content }}
+
+			<p>
+			{{ if gt (len .Params.audio) 0 }}
+				<a href="{{ .Permalink }}">Audio</a>
+			{{ end }}
+
+			{{ if gt (len .Params.video) 0 }}
+				<a href="{{ .Permalink }}">Video</a>
+			{{ end }}
+
+			<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "2006-01-02" }}</a>
+
 		{{ end }}
+
+	</div>
+
+	<div class="email-footer">
+
+		<p>	
+			Thanks for following Everyone's Creative! 
+		</p>
+		<p>
+			What did you think of this post? I'd love to hear your thoughts or ideas on my work.
+			You can get in touch with me at <a href="mailto:hello@everyonescreative.net" alt="Email link for 'hello@everonescreative.net'" title="Email Everyone's Creative">hello@everyonescreative.net</a> or by <a href="https://www.simonpeng.net/links/" alt="Link to my links page at simonpeng.net" title="Simon Peng's Links">finding me online</a>.
+ 		</p>
+		<p>
+			This newsletter and <a href="https://www.everyonescreative.net/" target="_blank" alt="Everyone's Creative Homepage" title="Link to Everyone's Creative">
+			EveryonesCreative.net</a> 
+			don't use any analytics or trackers. 
+			I don't care to know if you opened the email, 
+			what kind of phone or computer you use, 
+			or where you're located in the world. If for some reason you think I should know any of that, you're free to get in touch.
+		</p>
+
+		<div class="email-fineprint">
+
+			<p>
+			<a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe from  these emails anytime.</a>
+			
+			{{ if eq (len .Pages) 1 }}
+				{{ with index .Pages 0 }}
+					<a href="{{ .Permalink }}">View this post in your browser.</a> <span class="microblog_divider">|</span> 
+				{{ end }}
+			{{ end }}		
+			
+			<a href="{{ .Site.BaseURL }}">Visit EveryonesCreative.net</a>
+			
+			<div style="text-align: center; color: #373737;">
+				<p>◙</p>
+				<p>Simon Peng, Everyone's Creative <br> 16 Myrtle Ave, Unit 8 <br> Hamilton, ON  L8M 2E9 <br> Canada </p>
+			</div>
+		</div>
 
 	</div>
 

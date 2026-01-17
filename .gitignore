@@ -10,3 +10,4 @@ data/
 public/
 resources/
 config.json
+.vscode/

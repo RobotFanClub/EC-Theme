@@ -1,0 +1,39 @@
+/* Custom CSS for Email Styling */
+
+.microblog_email {
+    padding: 0 1em;
+}
+
+.microblog_email p {
+    font-family: 'baskervville', 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
+}
+
+.microblog_email a {
+    color: #0082C7;
+}
+
+.microblog_email h1 h2 h3 h4 h5 h6 {
+    font-family: 'reglo', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.email-header {
+    background-color: #fff;
+    background-size: cover;
+    padding: 1em 0em;
+    border-bottom: solid 1px #FCAF16;
+}
+
+.email-fineprint {
+    font-size: 0.75rem;
+}
+
+.email-body {
+    padding: 1em 0em;
+}
+
+.email-footer {
+    font-size: small;
+    padding: 1em 0em;
+    border-top: solid 1px #0082C7;
+}
