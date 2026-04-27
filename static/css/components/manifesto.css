@@ -12,7 +12,7 @@
 
 .avara-swap {
     font-family: 'avara'; 
-    font-size: 32px;
+    font-size: var(--h3-size);
 }
 
 .manifesto-row-2 {
@@ -34,4 +34,12 @@
 
 .manifesto-text {
     padding-top: 0.5em;
+}
+
+@media screen and (max-width: 500px) {
+
+    .manifesto-row-2 {
+        grid-template-columns: auto;
+    }
+    
 }

@@ -43,6 +43,13 @@ h2.substack_subtitle {
     margin-right: auto;
 }
 
+@media screen and (max-width: 1024px) {
+    .image2-inset img {
+        width: 122%;
+        margin-left: -11%;
+    }
+}
+
 .image-caption {
     text-align: center;
 }
