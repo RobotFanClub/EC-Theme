@@ -46,7 +46,7 @@
 		padding: 1em 2em;
 		font-size: medium;
 		max-width: 800px;
-		margin-left: 0;
+		margin-left: 2em;
 		margin-right: auto;
 	}
 
@@ -58,15 +58,18 @@
 	
 </style>
 
-<div class="microblog_email">
+<table class="microblog_email">
 
-	<div class="email-header">
+	<tr class="email-header">
+		<td>
+			<tr>
 		<img 	src="https://ec-test.micro.blog/assets/Logo-Name-Blobs.png" 
 				width="auto" height="70px" 
 				alt="Everyone's Creative Logo" 
 				vertical-align: middle;
 				style=" padding-bottom: 0.5em;">
-		<div class="email-fineprint">
+			</tr>
+		<tr class="email-fineprint">
 			<p>
 			{{ if eq (len .Pages) 1 }}
 				{{ with index .Pages 0 }}
@@ -77,11 +80,13 @@
 			<p>
 				Don't want to receive these emails anymore?
 				You can <a href="{{ .Footer.UnsubscribeURL }}">unsubscribe</a> anytime.</p>
-		</div>
-	</div>
+			</tr>
+		</td>
+	</tr>
 
 
-	<div class="email-body">
+	<tr class="email-body">
+		<td>
 
 		{{ if gt (len .Intro) 0 }}
 			<p>
@@ -116,17 +121,22 @@
 
 		{{ end }}
 
-	</div>
+		</td>
+	</tr>
 
-	<div class="email-footer">
+	<tr class="email-footer">
+
+		<td>
 
 		<p>	
 			Thanks for following Everyone's Creative! 
 		</p>
+
 		<p>
 			What did you think of this post? I'd love to hear your thoughts or ideas on my work.
 			You can get in touch with me at <a href="mailto:hello@everyonescreative.net" alt="Email link for 'hello@everonescreative.net'" title="Email Everyone's Creative">hello@everyonescreative.net</a> or by <a href="https://www.simonpeng.net/links/" alt="Link to my links page at simonpeng.net" title="Simon Peng's Links">finding me online</a>.
  		</p>
+
 		<p>
 			This newsletter and <a href="https://www.everyonescreative.net/" target="_blank" alt="Everyone's Creative Homepage" title="Link to Everyone's Creative">
 			EveryonesCreative.net</a> 
@@ -159,6 +169,8 @@
 			</div>
 		</div>
 
-	</div>
+		</td>
 
-</div>
+	</tr>
+
+</table>
