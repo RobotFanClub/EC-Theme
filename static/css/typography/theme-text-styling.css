@@ -152,6 +152,14 @@ blockquote {
 
 blockquote > :last-child { margin-bottom: 0; }
 
+@media screen and (max-width: 800px) {
+
+    blockquote {
+        margin: 0em;
+    }
+    
+}
+
 /** Code formatting */
 pre, code { 
     font-family: 'drafting-mono';

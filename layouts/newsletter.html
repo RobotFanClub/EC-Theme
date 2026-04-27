@@ -26,9 +26,12 @@
 		color: #0082C7;
 	}
 
-	.microblog_email h1 h2 h3 h4 h5 h6 {
+	.microblog_email {
+
+		h1, h2, h3, h4, h5 {
 		font-family: 'reglo', Arial, Helvetica, sans-serif;
 		text-transform: uppercase;
+	}
 	}
 
 	.email-header {
@@ -57,12 +60,11 @@
 <div class="microblog_email">
 
 	<div class="email-header">
-		<img 	src="/static/assets/Logo-Name-Blobs.png" 
+		<img 	src="https://ec-test.micro.blog/assets/Logo-Name-Blobs.png" 
 				width="auto" height="70px" 
 				alt="Everyone's Creative Logo" 
 				vertical-align: middle;
 				style=" padding-bottom: 0.5em;">
-	<div class="microblog_divider"></div>
 		<div class="email-fineprint">
 			<p>
 			{{ if eq (len .Pages) 1 }}
@@ -94,7 +96,7 @@
 		{{ range .Pages }}
 
 			{{ if .Title }}
-				<b>{{ .Title }}</b>
+				<h1>{{ .Title }}</h1>
 			{{ end }}
 
 			<p>
@@ -137,12 +139,16 @@
 
 			<p>
 			<a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe from  these emails anytime.</a>
+
+			<span> &#160; | &#160; </span>
 			
 			{{ if eq (len .Pages) 1 }}
 				{{ with index .Pages 0 }}
-					<a href="{{ .Permalink }}">View this post in your browser.</a> <span class="microblog_divider">|</span> 
+					<a href="{{ .Permalink }}">View this post in your browser.</a>
 				{{ end }}
-			{{ end }}		
+			{{ end }}	
+			
+			<span> &#160; | &#160; </span>
 			
 			<a href="{{ .Site.BaseURL }}">Visit EveryonesCreative.net</a>
 			

@@ -27,11 +27,16 @@ h2.substack_subtitle {
 }
 
 /*  Images from substack are burried in multiple layers of classes.
-    I'm leaving this commented out until I figure out the best way to work with these.
+    I'm commenting out any of the ones I haven't explicitly defined styling for. */
 
-.captioned-image-container {
+/* Images inside the "figure" elements get a weird left margin. This fixes that (so far). */
+
+.captioned-image-container > figure {
+    margin-left: 0;
     
 }
+
+/*
 
 .image-link {
     
